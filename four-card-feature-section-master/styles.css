@@ -1,32 +1,39 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 15px;
   font-weight: 200;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
   text-align: center;
+  grid-area: header;
 }
 
 span {
   font-weight: 200;
 }
+
 .services h2 {
   margin: 0;
 }
 
 .services {
   padding: 20px;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 300px;
   height: 200px;
   border-radius: 8px;
   box-shadow: 4px 8px 10px lightsteelblue;
 }
+
+.services > div {
+  width: 100%;
+}
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 
@@ -36,7 +43,12 @@ span {
 
 .supervisor {
   border-top: 5px solid hsl(180, 62%, 55%);
+  grid-column: 1/2;
   align-self: center;
+}
+
+.middle {
+  grid-column: 2/3;
 }
 
 .team-builder {
@@ -49,5 +61,6 @@ span {
 
 .calculator {
   border-top: 5px solid hsl(212, 86%, 64%);
+  grid-column: 3/4;
   align-self: center;
 }
