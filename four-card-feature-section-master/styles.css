@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+span {
+  font-weight: 200;
+}
+.services h2 {
+  margin: 0;
+}
+
+.services {
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 4px 8px 10px lightsteelblue;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
+
+.icons {
+  float: right;
+}
+
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  align-self: center;
+}
+
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  align-self: center;
+}
